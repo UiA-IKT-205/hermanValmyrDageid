@@ -78,20 +78,17 @@ class MainActivity : AppCompatActivity() {
                 }
                 timer.start()
             }
+    fun updateCountDownDisplay(timeInMs:Long){
+        coutdownDisplay.text = millisecondsToDescriptiveTime(timeInMs)
 
-            timer.start()
-        }
         fun updateCountDownDisplay(timeInMs:Long){
             coutdownDisplay.text = millisecondsToDescriptiveTime(timeInMs)
-
-            fun updateCountDownDisplay(timeInMs:Long){
-                coutdownDisplay.text = millisecondsToDescriptiveTime(timeInMs)
-            }
-            startButton.isEnabled = false
-            countDownBtn30.isEnabled = false
-            countDownBtn60.isEnabled = false
-            countDownBtn90.isEnabled = false
-            countDownBtn120.isEnabled = false
         }
+        startButton.isEnabled = false
+        countDownBtn30.isEnabled = false
+        countDownBtn60.isEnabled = false
+        countDownBtn90.isEnabled = false
+        countDownBtn120.isEnabled = false
+    }
+ }
 
-}
