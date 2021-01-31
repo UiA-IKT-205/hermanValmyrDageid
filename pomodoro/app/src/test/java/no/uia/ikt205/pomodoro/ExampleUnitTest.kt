@@ -1,5 +1,6 @@
 package no.uia.ikt205.pomodoro
 
+import android.renderscript.ScriptGroup
 import no.uia.ikt205.pomodoro.util.millisecondsToDescriptiveTime
 import org.junit.Test
 
@@ -14,6 +15,10 @@ class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
+    }
+
+    fun countdowns(){
+
     }
 
     @Test
