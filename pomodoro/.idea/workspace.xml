@@ -27,9 +27,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc883dbb-cc13-441a-b90a-7236c7174560" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../piano/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../piano/.idea/modules.xml" afterDir="false" />
-    </list>
+    <list default="true" id="cc883dbb-cc13-441a-b90a-7236c7174560" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -271,10 +269,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2644" y="328" key="EnvironmentVariablesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611521087891" />
-    <state x="2557" y="333" key="FileChooserDialogImpl" timestamp="1616864684310">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="637" y="333" key="FileChooserDialogImpl" timestamp="1618232254917">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="637" y="333" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1614540895461" />
+    <state x="637" y="333" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1618232254917" />
     <state x="2557" y="333" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1616864684310" />
     <state width="1877" height="183" key="GridCell.Tab.0.bottom" timestamp="1612303018690">
       <screen x="0" y="0" width="1920" height="1040" />
