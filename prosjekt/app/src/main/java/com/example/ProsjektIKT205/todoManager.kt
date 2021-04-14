@@ -11,7 +11,7 @@ class todoManager {
     var onToDoUpdate: ((todo:ToDo) -> Unit)? = null
     //var progressBar = ProgressBar(null)
 
-    fun load(url: String, context:Context){
+    fun load(){
         todoCollection = mutableListOf(
             ToDo( "Trying my best", 0, false),  //test data
             ToDo("almost my best", 0, false)

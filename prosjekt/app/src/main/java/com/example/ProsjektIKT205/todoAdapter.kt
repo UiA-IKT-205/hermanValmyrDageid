@@ -9,7 +9,7 @@ import com.example.ProsjektIKT205.databinding.ExampleListBinding
 
 
 
-class todoAdapter(private val exampleList: List<ToDo>): RecyclerView.Adapter<todoAdapter.ViewHolder>() {
+class todoAdapter(private var exampleList: List<ToDo>): RecyclerView.Adapter<todoAdapter.ViewHolder>() {
 
     class ViewHolder(val binding: ExampleListBinding):RecyclerView.ViewHolder(binding.root) {
         fun bind(todo: ToDo) {
@@ -27,4 +27,10 @@ class todoAdapter(private val exampleList: List<ToDo>): RecyclerView.Adapter<tod
     }
 
     override fun getItemCount() = exampleList.size
+
+    public fun updateCollection(newToDos:List<ToDo>){
+        exampleList = newToDos
+        notifyDataSetChanged()
+    }
+
 }

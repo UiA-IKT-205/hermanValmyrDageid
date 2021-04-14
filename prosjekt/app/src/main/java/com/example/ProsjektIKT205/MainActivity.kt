@@ -31,6 +31,10 @@ class MainActivity : AppCompatActivity() {
         Log.d("Actionbar", "Actionbar")
         binding.todoListing.layoutManager = LinearLayoutManager(this)
         binding.todoListing.adapter = todoAdapter(emptyList<ToDo>())
+        todoManager.instance.onToDo = {
+            (binding.todoListing.adapter as todoAdapter).updateCollection(it)
+        }
+        todoManager.instance.load()
 
         val todos = todoManager.instance
 
@@ -48,22 +52,20 @@ class MainActivity : AppCompatActivity() {
 //        exampleList.add(new newToDoActivity("Line 1", 10, false))
 
 
-//        newToDoBtn.setOnClickListener{      //should fucking work, wtf.
+//        newToDoBtn.setOnClickListener{      //should work but don't
 //            val intent = Intent(this, newToDoActivity::class.java)
 //            startActivity(intent)
 //        }
     }
 
     private fun addToDo(title: String) {
-
         val todo = ToDo(title, 0)
         todoManager.instance.addToDo(todo)
-
     }
 
     private fun AnonymousSignIn(){
         auth.signInAnonymously().addOnSuccessListener {
-            println("Sign in success ${it.user}")    //what is this warning even ${it.user}
+            println("Sign in success ${it.user}")
             Log.d("MainActivity.kt","Successful login!")
         }.addOnFailureListener(){
             Log.e("MainActivity.kt", "Failed login :(", it)

@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Prosjekt1">
-        <activity android:name=".newToDoActivity" android:parentActivityName=".MainActivity"/>    <!--ToDo activity-->
+        <activity android:name=".todoActivity"></activity>
+        <activity
+            android:name=".newToDoActivity"
+            android:parentActivityName=".MainActivity" /> <!-- ToDo activity -->
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
